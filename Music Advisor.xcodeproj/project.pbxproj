@@ -13,6 +13,9 @@
 		24AD4547261E46320080C38D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24AD4545261E46320080C38D /* Main.storyboard */; };
 		24AD4549261E46360080C38D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24AD4548261E46360080C38D /* Assets.xcassets */; };
 		24AD454C261E46360080C38D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24AD454A261E46360080C38D /* LaunchScreen.storyboard */; };
+		24AD4558261E48D90080C38D /* BillboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AD4557261E48D90080C38D /* BillboardManager.swift */; };
+		24AD455B261E56940080C38D /* BillboardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AD455A261E56940080C38D /* BillboardData.swift */; };
+		24AD455E261E5D7D0080C38D /* BillboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AD455D261E5D7D0080C38D /* BillboardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		24AD4548261E46360080C38D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24AD454B261E46360080C38D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24AD454D261E46360080C38D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24AD4557261E48D90080C38D /* BillboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardManager.swift; sourceTree = "<group>"; };
+		24AD455A261E56940080C38D /* BillboardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardData.swift; sourceTree = "<group>"; };
+		24AD455D261E5D7D0080C38D /* BillboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		24AD453E261E46320080C38D /* Music Advisor */ = {
 			isa = PBXGroup;
 			children = (
+				24AD4556261E46610080C38D /* Controller */,
+				24AD4555261E465B0080C38D /* View */,
+				24AD4554261E46550080C38D /* Model */,
 				24AD453F261E46320080C38D /* AppDelegate.swift */,
 				24AD4541261E46320080C38D /* SceneDelegate.swift */,
-				24AD4543261E46320080C38D /* ViewController.swift */,
-				24AD4545261E46320080C38D /* Main.storyboard */,
 				24AD4548261E46360080C38D /* Assets.xcassets */,
 				24AD454A261E46360080C38D /* LaunchScreen.storyboard */,
 				24AD454D261E46360080C38D /* Info.plist */,
 			);
 			path = "Music Advisor";
+			sourceTree = "<group>";
+		};
+		24AD4554261E46550080C38D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24AD4557261E48D90080C38D /* BillboardManager.swift */,
+				24AD455A261E56940080C38D /* BillboardData.swift */,
+				24AD455D261E5D7D0080C38D /* BillboardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24AD4555261E465B0080C38D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24AD4545261E46320080C38D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24AD4556261E46610080C38D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24AD4543261E46320080C38D /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				24AD4544261E46320080C38D /* ViewController.swift in Sources */,
+				24AD455B261E56940080C38D /* BillboardData.swift in Sources */,
 				24AD4540261E46320080C38D /* AppDelegate.swift in Sources */,
+				24AD455E261E5D7D0080C38D /* BillboardModel.swift in Sources */,
 				24AD4542261E46320080C38D /* SceneDelegate.swift in Sources */,
+				24AD4558261E48D90080C38D /* BillboardManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
